@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+ <header>
+  <img src="./images/logo.svg" alt="logo">
+  <nav>
+    <a href="" onclick="hideMenu()"><img src="./images/icon-close-menu.svg" alt=""></a>
+    <ul class="links">
+      <div class="selector" id="features">
+        <li class="select" id="first">Features <img class="arrow-button" src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></li>
+        <ul class="options">
+          <li><img src="./images/icon-todo.svg" alt="">Todo List</li>
+          <li><img src="./images/icon-calendar.svg" alt="">Calender</li>
+          <li><img src="./images/icon-reminders.svg" alt="">Remainders</li>
+          <li><img src="./images/icon-planning.svg" alt="">Planning</li>
+        </ul>
+      </div>
+      <div class="selector" id="company">
+        <li class="select" id="second">Company <img class="arrow-button" src="./images/icon-arrow-down.svg" alt=""></li>
+        <ul class="options">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <li id="third">Careers</li>
+      <li id="fourth">About</li>
+    </ul>
+    <ul class="buttons">
+      <li><button id="login-button">Login</button></li>
+      <li><button id="register-button">Register</button></li>
+    </ul>
+</nav>
+  <a class="humburger-menu" id="menu" onclick="showMenu()"><img src="./images/icon-menu.svg" alt=""></a>
+ </header>
+ <main>
+  <div id="card">
+    <div>
+      <h1>Make </h1>
+      <h1>remote work</h1>
+    </div> 
+    <p>Get your team in sync, no matter your location.
+    Streamline processes, create team rituals, and
+    watch productivity soar.</p>
+    <button>Learn more</button>
+    <ul>
+      <li><img src="./images/client-databiz.svg" alt=""></li>
+      <li><img src="./images/client-audiophile.svg" alt=""></li>
+      <li><img src="./images/client-meet.svg" alt=""></li>
+      <li><img src="./images/client-maker.svg" alt=""></li>
+    </ul>
+  </div>
+  <picture>
+    <source class="mobile-image" srcset="./images/image-hero-mobile.png" media="(max-width:400px)">
+    <img class="desktop-image" src="./images/image-hero-desktop.png" alt="">
+  </picture>
+
+
+ </main>
+ <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Rubik:wght@400;700&display=swap');
+:root{
+    /*Colors*/
+    --Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+
+/*Fonts*/
+--Font-size: 18px;
+--Font-family:'Epilogue';
+--Font-weight-medium:500;
+--Font-weight-bold:700;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--Font-family);
+    font-size: var(--Font-size);
+    background-color: var(--Almost-White);
+}
+header{
+    width: 100%;
+    padding: 30px 40px   ;
+    display: flex 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+}
+header, nav .links, .buttons{
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    margin-left: 60px;
+    display: flex;
+}
+nav .links{
+    width: 100%;
+    gap: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.buttons{
+    gap: 30px;
+}
+#login-button{
+    border: none;
+    color: var(--Medium-Gray);
+    font-family: var(--Font-family);
+    font-weight: var(--Font-weight-medium);
+    background-color: transparent;
+    font-size: var(--Font-size);
+}
+#login-button:hover{
+    color: var(--Almost-Black);
+}
+#register-button{
+    color: var(--Medium-Gray);
+    font-family: var(--Font-family);
+    font-weight: var(--Font-weight-medium);
+    background-color: transparent;
+   padding: 10px 25px;
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 12px;
+    font-size: var(--Font-size);
+}
+#register-button:hover{
+    border-color: var(--Almost-Black);
+    color: var(--Almost-Black);
+}
+:hover{
+    cursor: pointer;
+}
+.options{
+    padding: 25px;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    display: grid;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2PX 10PX var(--Medium-Gray);
+}
+#features>.options{
+   display: none;
+}
+#company>.options{
+display: none;
+}
+.options>li{
+        display: flex;
+        gap: 10px;
+}
+.selector{
+    display: grid;
+    gap: 10px;
+}
+li, a{
+    color: var(--Medium-Gray);
+}
+li:hover,a:hover{
+    color: var(--Almost-Black);
+}
+#features{
+    place-items: end;
+}
+main{
+    display: flex;
+   margin:5%  8%;
+
+}
+.desktop-image{
+   width: 100%;
+}
+#card{
+padding: 70px 0px;
+margin: 70px 0px;
+}
+#card>div{
+    margin-bottom: 50px;
+}
+#card>div>h1{
+   font-size: 4rem;
+   font-weight: var(--Font-weight-bold);
+   color: var(--Almost-Black);
+}
+#card>p{
+    font-weight: var(--Font-weight-medium);
+    color: var(--Medium-Gray);
+    width: 80%;
+    line-height: 25px;
+}
+#card>button{
+    margin-top: 45px;
+    padding: 13px 23px;
+    background-color:var(--Almost-Black);
+    border: none;
+    font-weight: var(--Font-weight-bold);
+    font-family: var(--Font-family);
+    font-size: var(--Font-size);
+    color:var(--Almost-White);
+    border-radius: 13px;
+}
+#card>button:hover{
+    color:var(--Almost-Black);
+    background-color: transparent;
+    border: 2px solid var(--Almost-Black);
+}
+#card>ul{
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    align-items: end;
+}
+.humburger-menu{
+    visibility: hidden;
+}
+nav>a>img{
+    visibility: hidden;
+}
+.arrow-button.rotate{
+    transform: rotate(180deg);
+}
+@media screen and (max-width:400px) {
+    header{
+        padding: 20px 15px;
+    }
+    header>img{
+        width: 20%;
+    }
+  .humburger-menu{
+   visibility: visible;
+   margin-left: auto;
+  }
+  nav{
+   display: grid;
+   position: absolute;
+   top: 0px;
+   right: 0;
+   background-color: white;
+   height: 150%;
+   width: 60%;
+   padding: 20px;
+   visibility: hidden;
+}
+  nav>.links{
+    display: grid;
+    place-items: start;
+    gap: 0;
+    margin-top: -70px;
+  }
+ 
+  nav>a>img{
+    visibility:hidden;
+   position:absolute;
+   right: 20px;
+}
+  .buttons{
+    display: grid;
+    place-items: center;
+    margin-top:0px;
+  }
+  #register-button{
+    position: relative;
+    top: -50px;
+    padding: 10px 50px;
+  }
+    main{
+        padding: 0px 0px;
+        display: grid;
+    }
+    picture{
+        width: 85%;
+        margin-top: -900px;
+        margin-left: -30px;
+    }
+    .options{
+        box-shadow: none;
+    }
+    #card>div{
+        display: flex;
+        margin-top: 200px;
+        margin-left: -20px;
+    }
+    #card>div>h1{
+        font-size:2.4rem;
+
+    }
+   #card>p{
+    text-align: center;
+    margin-left: -15px;
+   }
+   #card>button{
+    margin-left: 20%;
+   }
+
+    #features{
+        position: absolute;
+        top: 40px;
+        place-items: start;
+    }
+   
+    #first{
+        margin-top: 40px;
+    }
+    #second{
+        margin-top: 50px;
+    }
+    #company{
+        position: absolute;
+        top: 220px;
+        place-items: start;
+    }
+    
+    #third{
+        margin-top: 400px;
+    }
+    #fourth{
+        margin-top: 15px;
+    }
+}
