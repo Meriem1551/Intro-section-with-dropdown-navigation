@@ -34,12 +34,16 @@ function showCompany(){
 
 let menu=document.querySelector('nav');
 let closeButton=menu.querySelector('a').querySelector('img');
+let body=document.querySelector('body');
 function showMenu(){
     menu.style.visibility='visible';
     closeButton.style.visibility=('visible');
+    body.style.backgroundColor='rgba(0, 0, 0, 0.5)';
 }
 
 function hideMenu(){
     menu.style.visibility='hidden';
     closeButton.style.visibility='hidden';
+    body.style.backgroundColor='';
+
 }
